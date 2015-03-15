@@ -1,0 +1,12 @@
+0) It is working like Form in html/jsp we are sending some values inside our Java  class it is connecting to remotely and connectiing to sever and 
+getting require values Means in another project we may use response.getWriter().write("") some values that values 
+here we are getting using All HttpClient ,HttpEntity,Reponse of all (Apache Http Jars)
+
+i)Update It is HttpRequest ===>here we sending some request to Server here
+not need to Servlet & any thing it will take remotely using HttpEntity &
+HttpClient class get response response,
+
+ii)We send Requset parameters like param1,param2 and sending the some
+values that values stored in required Server 
+
+iii) It is working like Form in html/jsp
