@@ -5,10 +5,6 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.methods.RequestEntity;
 import org.apache.commons.httpclient.methods.StringRequestEntity;
 
-import com.iwinner.ws.vo.AbstractValueObject;
-import com.iwinner.ws.vo.AdCommonVO;
-import com.iwinner.ws.vo.AdItVO;
-
 public class AditClient {
 
 	public static void main(String[] args) {

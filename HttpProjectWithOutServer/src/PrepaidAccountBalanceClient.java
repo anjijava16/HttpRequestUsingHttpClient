@@ -13,12 +13,12 @@ public class PrepaidAccountBalanceClient {
 		try {
 			
 			java.net.URL endpointURL = new java.net.URL(
-					"http://172.16.136.201:8080/MyAccountServiceWeb/sca/MyAccountInformationService");
+					"http://192.16.188:201:8080/MyAccountServiceWeb/sca/MyAccountInformationService");
 			System.out.println(endpointURL.getUserInfo());
 			MyAccount myAccount = (MyAccount) WsFactory.getAccountService();
       //	MyAccountInformationService_MyAccountHttpBindingStub mStub = new MyAccountInformationService_MyAccountHttpBindingStub(endpointURL, srv_myAccount);
 			BaseRequest baseReq = new BaseRequest();
-			baseReq.setMSISDN("601112302857"); //60102971710 //601127677737  //601112302857
+			baseReq.setMSISDN("9002857");
 			RetrievePrepaidAccountInformationRequest retrievePrepaidAccountInformationRequest = new RetrievePrepaidAccountInformationRequest();
 			retrievePrepaidAccountInformationRequest.setRequest(baseReq);
 

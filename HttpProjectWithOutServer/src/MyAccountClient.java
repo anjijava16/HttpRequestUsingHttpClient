@@ -15,13 +15,13 @@ public class MyAccountClient {
 	public static void main(String[] args) {
 		try {
 			java.net.URL endpointURL = new java.net.URL(
-					"http://172.16.136.201:8080/MyAccountServiceWeb/sca/MyAccountInformationService");
+					"http://192.16.128.201:8080/MyAccountServiceWeb/web/MyAccountInformationService");
 			System.out.println(endpointURL.getUserInfo());
 			MyAccount myAccount = (MyAccount) WsFactory.getAccountService();
 			MyAccountInformationService_MyAccountHttpBindingStub mStub = new MyAccountInformationService_MyAccountHttpBindingStub(
 					endpointURL, srv_myAccount);
 			BaseRequest baseReq = new BaseRequest();
-			baseReq.setMSISDN("60173348952");
+			baseReq.setMSISDN("9008952");
 			RetrievePostpaidAccountInformationRequest retrievePostpaidAccountInformationRequest = new RetrievePostpaidAccountInformationRequest();
 			retrievePostpaidAccountInformationRequest.setRequest(baseReq);
 			System.out.println("RetrievePostPaidAccount:::"+retrievePostpaidAccountInformationRequest.getRequest());
